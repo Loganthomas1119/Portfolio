@@ -22,12 +22,13 @@
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row row-content">
-                <div class="d-flex align-items-start">
-                    <img src="img/Kim.png" class="img-fluid mr-4 pl-0" width="75%" height="75%" alt="Logo"/>
+                <div class="d-flex justify-content-between align-items-end">
+                    <img src="img/Onelinelogo2.png" class="img-fluid mr-4 pl-0" width="50%" height="25%" alt="Logo"/>
                 </div> 
         <div class="col">
           <div class="d-flex justify-content-end">
-              <a href="shopnow.html" class="btn btn-dark btn-lg text-nowrap">Shop Now</a>
+              <a href="shopnow.html" class="btn btn-dark btn-lg text-nowrap" id="shopNow">Shop Now</a>
+              <a class="link" href="myCart.html"><i class="fa-solid fa-cart-shopping fa-xl ml-3"></i></a>
           </div>
     </header>
 
@@ -41,9 +42,8 @@
         </div>
         <div class="collapse navbar-collapse" id="nucampNavbar">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"></i> About</a></li>
-                <li class="nav-item"><a class="link" href="myCart.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+                <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg" id="home"></i> Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-info fa-lg" id="about"></i> About</a></li>
             </ul>
             </div>
         </div>
@@ -52,7 +52,7 @@
     <div class="container-fluid px-0">
         <div class="row mx-0">
             <div class="col-md-12">
-                <img class='img-fluid ml-5 mt-1 mb-0' src="img/Asset4.png" alt="border" />
+                <img class="mx-auto d-block" src="img/Asset4.png" alt="border" />
         </div>
       </div>
     </div>
@@ -60,7 +60,7 @@
     <div class="container-fluid px-0">
         <div class="row row-content align-items-center">
             <div class="col-12">
-                <h2 class="text-center mt-0 pt-0">Latest Items</h2>
+                <h2 class="text-center mt-0 pt-0"><strong>Latest Items</h2></strong>
             </div>
         </div>
     </div>
@@ -69,25 +69,25 @@
 
     <div class="card-deck">
         <div class="card text-white bg-secondary text-center">
-          <img class="card-img-top" src="img/ResinletterG.png" alt="Card image cap">
+          <img class="card-img-top" src="img/Product1/Product1.png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title text-center">Resin letter G</h5>
+            <h3 class="card-title text-center">Resin letter G</h3>
             <p class="card-text">This is a resin letter G</p>
                 <a href="#addtoCart" class="btn btn-light btn-lg text-nowrap">Add to Cart</a>
           </div>
         </div>
         <div class="card text-white bg-secondary text-center">
-          <img class="card-img-top" src="img/ResinletterG.png" alt="Card image cap">
+          <img class="card-img-top" src="img/Product2/Product2.png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title text-center">Resin letter G</h5>
+            <h3 class="card-title text-center">Resin letter G</h3>
             <p class="card-text">This is a resin letter G</p>
                 <a href="#addtoCart" class="btn btn-light btn-lg text-nowrap">Add to Cart</a>
           </div>
         </div>
         <div class="card text-white bg-secondary text-center">
-          <img class="card-img-top" src="img/ResinletterG.png" alt="Card image cap">
+          <img class="card-img-top" src="img/Product3/Product3.png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title text-center">Resin letter G</h5>
+            <h3 class="card-title text-center">Resin letter G</h3>
             <p class="card-text">This is a resin letter G</p>
             <a href="#addtoCart" class="btn btn-light btn-lg text-nowrap">Add to Cart</a>
           </div>
@@ -112,10 +112,13 @@
                     </div>
                   </div>
                   <div class="col-auto">
-                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                    <button type="submit" class="btn btn-primary mb-2" id="submit">Submit</button>
                   </div>
                 </div>
               </form>
+        </div>
+    </div>
+  
 
 
 </body>
@@ -124,8 +127,8 @@
 
     <div class="container-fluid px-0">
         <div class="row mx-0">
-            <div class="col-md-12">
-                <img class='img-fluid ml-5 mt-5' src="img/Asset4.png" alt="border" />
+            <div class="col-12">
+              <img class="mx-auto d-block" src="img/Asset4.png" alt="border" />
         </div>
       </div>
     </div>
