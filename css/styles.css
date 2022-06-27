@@ -81,35 +81,13 @@ header h2 {
     color: black;
 }
 
-#about {
-    color: white;
-}
 
-#home {
-    color: white;
-}
-
-#cartIcon {
-    float: right;
-}
-
-
-.navbar-nav {
-    margin-right: 150px;
-    text-align: center;
-    color:white;
-
-}
-
-.nav-link {
-    color: white;
-}
 
 #borderImage {
     image-orientation: center;
 }
 
-#logoimage {
-    align-content: left;
-    
+
+.nav-item {
+    color: white;
 }
