@@ -23,6 +23,7 @@ header h2 {
     margin: 0;
     padding: 30px;
     background-color: #A9ABC9;
+    border-bottom: #8F90A6, 10px;
 }
 
 .row-content {
@@ -32,12 +33,13 @@ header h2 {
 }
 
 .navbar {
-    background-color: hsl(0, 0%, 100%);
-    float:none;
-    margin:0 auto;
-    display: block;
-    text-align: center;
+    background-color: #A9ABC9;
+    float:right;
+    margin:0;
+    display: inline;
+    text-align: right;
     border: none !important;
+    color: white;
 
 
 }
@@ -48,18 +50,6 @@ header h2 {
     padding: 10px;
 }
 
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5)
-}
-
-.carousel {
-    border: solid #5637DD
-}
-
-.image-bg-fixed-height {
-    background-image:url(C:\Users\LoganThomas\Desktop\NucampFolder\2-Bootstrap\kimsDesigns\img\border.jpg)  no-repeat center center scroll;
-    height: 450px;
-}
 
 .img-center {
     margin: 0 auto;
@@ -76,6 +66,9 @@ header h2 {
 #shopNow {
     background-color: #D2D3D9;
     color: black;
+    border-color: #D2D3D9;
+    float: right;
+
 }
 
 .link {
@@ -89,9 +82,34 @@ header h2 {
 }
 
 #about {
-    color: black;
+    color: white;
 }
 
 #home {
-    color: black;
+    color: white;
+}
+
+#cartIcon {
+    float: right;
+}
+
+
+.navbar-nav {
+    margin-right: 150px;
+    text-align: center;
+    color:white;
+
+}
+
+.nav-link {
+    color: white;
+}
+
+#borderImage {
+    image-orientation: center;
+}
+
+#logoimage {
+    align-content: left;
+    
 }
