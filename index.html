@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     
@@ -21,51 +22,50 @@
 <body>
 
     <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #A9ABC9;">
-    <div class="container-fluid justify-content-end justify-content-md-between">
-        <a class="navbar-brand me-2 mb-1 d-flex justify-content-center" href="#">
-          <img src="img/Onelinelogo3.png" height="150px" width="550px" alt="" />
-        </a>
-        <ul class="navbar-nav flex-row ml-auto">
-          <li class="nav-item me-3 me-lg-0">
-            <a class="nav-link" href="#">
-              <span class="d-none d-lg-inline-block" style="color: white;">Contact</span>
-              <i class="fas fa-envelope d-inline-block d-lg-none"></i>
-            </a>
-          </li>
-          <li class="nav-item me-3 me-lg-0 mt-2">
-            <span class="d-none d-lg-inline-block">About</span>
-            <i class="fas fa-info d-inline-block d-lg-none"></i>
-          </li>
-          <li class="nav-item me-3 me-lg-0">
-            <a class="nav-link" href="myCart.html">
-              <span><i class="fas fa-shopping-cart" style="color: white;"></i></span>
-              <span class="badge rounded-pill badge-notification bg-dark" style="color: white;">1</span>
-            </a>
-          </li>
-          <li class="nav-item me-3 me-lg-0">
-            <a class="nav-link" href="shopnow.html">
-              <button class="btn btn-dark btn-lg mt-0 mr-4" id="shopNow">Shop</button>
-            </a>
-          </li>
-        </ul>
+
+  <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+      <div class="container align-items-center">
+        <div class="col-xs-12">
+          <a class="navbar-brand" href="index.html"><img src="img/Onelinelogo3.png" height="50" width="175" /></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gridnomesNavbar">
+              <span class="navbar-toggler-icon" style="border-color: white;"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="gridnomesNavbar">
+              <ul class="navbar-nav" style="color: white;">
+                  <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-envelope" style="color: white;"></i> Contact</a></li>
+                  <li class="nav-item"><a class="nav-link" href="myCart.html"><i class="fa fa-shopping-cart" style="color: white;"></i> My Cart</a></li>
+              </ul>
+              <div style="float: right; cursor: pointer;">
+                <span class="navbar-text ml-auto">
+                  <a href="shoplater.html" type="button" id="shopButton">
+                      <i class="fa fa-shopping-cart"></i> Cart
+                  </a>
+              </span>
+          </div>
       </div>
-    </div>
   </nav>
-   
+  
+  <div class="row"> 
+  </div>
 
-
-  <div class="media">
-    <img class="mx-auto d-block" src="img/Asset4.png" alt="border" id="borderImage" />
-        </div>
+  <div class="row row-content align-items-center mt-4 mb-4">
+    <div class="col-12">
+        <h5 class="text-center">Welcome to Gridnomes!<br>
+          We specialize in handcrafted designs.<br>
+          Happy Shopping!<br><br>
+          <a href="shoplater.html" class="btn btn-dark btn-lg">Shop Now</a>
+          </h6>
       </div>
     </div>
   </div>
 
+
   <div class="container-fluid px-0">
     <div class="row row-content align-items-center">
       <div class="col-12">
-        <h2 class="text-center mt-0 pt-0"><strong>Latest Items</h2></strong>
+        <h4 class="text-center mt-0 pt-0"><strong>Latest Items</h4></strong>
       </div>
     </div>
   </div>
@@ -73,40 +73,43 @@
     <!--Latest Items-->
 
     <div class="card-deck">
-        <div class="card text-white bg-secondary text-center">
-          <img class="card-img-top" src="img/Product1/Product1.png" alt="Card image cap">
-          <div class="card-body">
-            <h3 class="card-title text-center">Resin letter G</h3>
-            <p class="card-text">This is a resin letter G</p>
-                <a href="#addtoCart" class="btn btn-light btn-lg text-nowrap">Add to Cart</a>
+        <div class="card text-black bg-secondary text-center">
+          <a href="item1.html">
+            <img class="card-img-top" src="img/Product1/Product1.png" alt="Card image cap">
+          </a>
+          <div class="card-body" style="background-color:#D2D2D9;">
+            <h3 class="card-title text-center"><strong>Patriotic Bubble Light</strong></h3>
+                <a href="#addtoCart" class="btn btn-dark btn-lg text-nowrap" id="add-to-cart" onclick="myFunction()">Add to Cart</a>
           </div>
         </div>
-        <div class="card text-white bg-secondary text-center">
-          <img class="card-img-top" src="img/Product2/Product2.png" alt="Card image cap">
-          <div class="card-body">
-            <h3 class="card-title text-center">Resin letter G</h3>
-            <p class="card-text">This is a resin letter G</p>
-                <a href="#addtoCart" class="btn btn-light btn-lg text-nowrap">Add to Cart</a>
+        <div class="card text-black bg-secondary text-center">
+          <a href="item2.html">
+            <img class="card-img-top" src="img/Product2/product2.1.png" alt="Card image cap">
+          </a>
+          <div class="card-body" style="background-color:#D2D2D9;">
+            <h3 class="card-title text-center"><strong>Patriotic Gnome Light</strong></h3>
+                <a href="#addtoCart" class="btn btn-dark btn-lg text-nowrap" id="add-to-cart" onclick="myFunction()">Add to Cart</a>
           </div>
         </div>
-        <div class="card text-white bg-secondary text-center">
-          <img class="card-img-top" src="img/Product3/Product3.png" alt="Card image cap">
-          <div class="card-body">
-            <h3 class="card-title text-center">Resin letter G</h3>
-            <p class="card-text">This is a resin letter G</p>
-            <a href="#addtoCart" class="btn btn-light btn-lg text-nowrap">Add to Cart</a>
+        <div class="card text-black bg-secondary text-center">
+          <a href="item3.html">
+            <img class="card-img-top" src="img/Product3 - Copy/product3.1.png" alt="Card image cap">
+          </a>
+          <div class="card-body" style="background-color:#D2D2D9;">
+            <h3 class="card-title text-center"><strong>Dandelion in Resin</strong></h3>
+                <a href="#addtoCart" class="btn btn-dark btn-lg text-nowrap" id="add-to-cart" onclick="myFunction()">Add to Cart</a>
           </div>
         </div>
-    </div>
+  </div>
 
-    <div class="container-fluid px-0">
+    <div class="container-fluid px-0 mt-5">
         <div class="row row-content align-items-center">
             <div class="col-12">
                 <h2 class="text-center mt-0 pt-0 mb-4">Subscribe for more information and get alerted when new products are updated</h2>
             </div>
             <form class="mx-auto">
                 <div class="form-row align-items-center">
-                  <div class="col-auto">
+                  <div class="col-auto ml-4">
                     <label class="sr-only" for="inlineFormInput">Name</label>
                     <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="First and Last Name">
                   </div>
@@ -116,8 +119,8 @@
                       <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Email">
                     </div>
                   </div>
-                  <div class="col-auto">
-                    <button type="submit" class="btn btn-primary mb-2" id="submit">Submit</button>
+                  <div class="col-auto ml-4">
+                    <button type="submit" class="btn btn-dark mb-2" id="submit">Submit</button>
                   </div>
                 </div>
               </form>
@@ -130,16 +133,9 @@
 
 <footer>
 
-    <div class="container-fluid px-0">
-        <div class="row mx-0">
-            <div class="col-12">
-              <img class="mx-auto d-block" src="img/Asset4.png" alt="border" />
-        </div>
-      </div>
-    </div>
     
 </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

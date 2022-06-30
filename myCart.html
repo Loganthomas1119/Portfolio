@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     
@@ -15,9 +16,32 @@
     <link rel="stylesheet" href="css/styles.css" />
 
     <script src="https://kit.fontawesome.com/a2fb3ee4af.js" crossorigin="anonymous"></script>
+
     <title>Kim's Designs</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container align-items-center">
+          <div class="col-xs-12">
+            <a class="navbar-brand" href="index.html"><img src="img/Onelinelogo3.png" height="50" width="175" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gridnomesNavbar">
+                <span class="navbar-toggler-icon" style="border-color: white;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="gridnomesNavbar">
+                <ul class="navbar-nav" style="color: white;">
+                    <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-envelope" style="color: white;"></i> Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="myCart.html"><i class="fa fa-shopping-cart" style="color: white;"></i> My Cart</a></li>
+                </ul>
+                <span class="navbar-text ml-auto">
+                    <a href="shoplater.html" type="button" id="shopButton">
+                        <i class="fa fa-shopping-bag"></i> Shop
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
     <section class="h-100" style="background-color: #eee;">
         <div class="container h-100 py-5">
         <div class="row d-flex justify-content-center align-items-center h-100">
