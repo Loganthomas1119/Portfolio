@@ -23,7 +23,7 @@
 
     <!-- NAVBAR -->
 
-  <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
       <div class="container align-items-center">
         <div class="col-xs-12">
           <a class="navbar-brand" href="index.html"><img src="img/Onelinelogo3.png" height="50" width="175" /></a>
@@ -35,13 +35,12 @@
                   <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
                   <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
                   <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-envelope" style="color: white;"></i> Contact</a></li>
-                  <li class="nav-item"><a class="nav-link" href="myCart.html"><i class="fa fa-shopping-cart" style="color: white;"></i> My Cart</a></li>
               </ul>
-              <div style="float: right; cursor: pointer;">
-                <span class="navbar-text ml-auto">
+              <span class="navbar-text ml-auto">
                   <a href="shoplater.html" type="button" id="shopButton">
-                      <i class="fa fa-shopping-cart"></i> Cart
+                      <i class="fa fa-shopping-bag"></i> Shop
                   </a>
+                  <button type="button" class="btn btn-light" data-toggle="modal" data-target="#cart"><i class="fa fa-shopping-cart" style="color: grey;"></i>Cart (<span class="total-count"></span>)</button>
               </span>
           </div>
       </div>
@@ -79,7 +78,7 @@
           </a>
           <div class="card-body" style="background-color:#D2D2D9;">
             <h3 class="card-title text-center"><strong>Patriotic Bubble Light</strong></h3>
-                <a href="#addtoCart" class="btn btn-dark btn-lg text-nowrap" id="add-to-cart" onclick="myFunction()">Add to Cart</a>
+                <a href="#addtoCart" class="btn btn-dark btn-lg text-nowrap" id="add-to-cart">Add to Cart</a>
           </div>
         </div>
         <div class="card text-black bg-secondary text-center">
@@ -126,7 +125,28 @@
               </form>
         </div>
     </div>
-  
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table">
+              
+            </table>
+            <div>Total price: $<span class="total-cart"></span></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Order now</button>
+          </div>
+        </div>
+      </div>
+    </div> 
 
 
 </body>

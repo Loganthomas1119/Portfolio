@@ -10,10 +10,4 @@ $(function() {
     });
 }); 
 
-var currentItems = 0;
 
-let myFunction = $(document).jquery(function(){
-                    $("#add-to-cart").on('click',function(){
-                         currentItems++
-                    });
-                 });
